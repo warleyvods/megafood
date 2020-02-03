@@ -1,11 +1,13 @@
-package com.delivery.megafood.domain.entity;
+package com.delivery.megafood.domain.restaurante.entity;
 
+import com.delivery.megafood.domain.cozinha.entity.Cozinha;
 import com.delivery.megafood.domain.util.EntidadeAbstrata;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import java.math.BigDecimal;
 
@@ -16,10 +18,11 @@ public class Restaurante extends EntidadeAbstrata {
 
     private String nome;
 
-    @Column(name = "taxa_frete")
+    @Column(name = "taxa_frete", nullable = false)
     private BigDecimal taxaFrete;
 
     @ManyToOne
+    @JoinColumn(name = "cozinha_id", nullable = false)
     private Cozinha cozinha;
 
 }

@@ -51,12 +51,11 @@ public class Away {
 
     private static Hora getDif(long difMilli) {
         int timeInSeconds = (int) difMilli / 1000;
-        int hours, minutes, seconds;
-        hours = timeInSeconds / 3600;
-        timeInSeconds = timeInSeconds - (hours * 3600);
-        minutes = timeInSeconds / 60;
-        timeInSeconds = timeInSeconds - (minutes * 60);
-        seconds = timeInSeconds;
+        int hours = timeInSeconds / 3600;
+        timeInSeconds -= (hours * 3600);
+        int minutes = timeInSeconds / 60;
+        timeInSeconds -= (minutes * 60);
+        int seconds = timeInSeconds;
 
         Hora hora = new Hora(hours, minutes, seconds);
         return hora;

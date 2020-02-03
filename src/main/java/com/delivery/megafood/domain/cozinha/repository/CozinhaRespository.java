@@ -1,7 +1,6 @@
-package com.delivery.megafood.domain.repository;
+package com.delivery.megafood.domain.cozinha.repository;
 
-import com.delivery.megafood.domain.entity.Cozinha;
-import com.delivery.megafood.domain.entity.Restaurante;
+import com.delivery.megafood.domain.cozinha.entity.Cozinha;
 
 import java.util.List;
 

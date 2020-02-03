@@ -1,8 +1,7 @@
-package com.delivery.megafood.domain.infrastructure.repository;
+package com.delivery.megafood.domain.cozinha.service;
 
-import com.delivery.megafood.domain.entity.Cozinha;
-import com.delivery.megafood.domain.entity.Restaurante;
-import com.delivery.megafood.domain.repository.CozinhaRespository;
+import com.delivery.megafood.domain.cozinha.entity.Cozinha;
+import com.delivery.megafood.domain.cozinha.repository.CozinhaRespository;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
